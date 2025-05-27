@@ -4,62 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Purnima Prabha | AI Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <header>
+    <img src="profile.jpg" alt="Purnima Prabha" class="profile-pic" />
     <h1>Purnima Prabha</h1>
-    <p>Master’s Student in Artificial Intelligence Systems | EPITA, Paris</p>
-    <p><a href="mailto:purnimapr8@gmail.com">purnimapr8@gmail.com</a> | +33 605538449 | <a href="https://github.com/purnimapr8" target="_blank">GitHub</a></p>
+    <p class="subtitle">Master’s Student in Artificial Intelligence Systems | EPITA, Paris</p>
+
+    <div class="contact-line">
+      <a href="mailto:purnimapr8@gmail.com" title="Email me">purnimapr8@gmail.com</a> | 
+      <a href="tel:+33605538449" title="Call me">+33 605538449</a> | 
+      <a href="https://github.com/purnimapr8" target="_blank" rel="noopener" title="GitHub Profile">GitHub</a>
+    </div>
+
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m passionate about building intelligent AI systems that solve real-world problems. 
-      Currently pursuing my Master’s in AI Systems at EPITA, Paris. Skilled in machine learning, deep learning, 
-      Python, FastAPI deployment, and data preprocessing. I love creating projects that blend creativity with data-driven solutions.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Purnima — a passionate AI explorer and problem solver currently pursuing my Master’s in Artificial Intelligence Systems at EPITA, Paris. I love creating AI projects that blend creativity, data, and meaningful impact. Skilled in Python, machine learning, deep learning, and FastAPI, I’m driven to build scalable and explainable AI solutions.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Employee Performance Prediction System</h3>
-      <p>Built an end-to-end ML pipeline achieving 87% accuracy using ensemble models and deployed with FastAPI. Integrated SHAP for explainability to help HR make data-driven decisions.</p>
-    </div>
-    <div class="project">
-      <h3>Student Support Chatbot</h3>
-      <p>Developed a context-aware chatbot that reduced student query response time by 70%. Scalable and built with FastAPI for future improvements.</p>
-    </div>
-    <div class="project">
-      <h3>Telugu Manuscript OCR & Reader</h3>
-      <p>Created a Gradio-based app that extracts handwritten Telugu text from images using pytesseract and reads it aloud with Google TTS.</p>
-    </div>
-  </section>
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, FastAPI, Scikit-learn, TensorFlow, PyTorch</li>
-      <li>Machine Learning, Deep Learning, NLP, Predictive Modeling</li>
-      <li>Data Preprocessing, Hyperparameter Tuning, MLOps</li>
-      <li>AWS, Docker, Kubernetes, Git</li>
-    </ul>
-  </section>
+      <div class="project">
+        <h3>Employee Performance Prediction System</h3>
+        <p>
+          Developed an end-to-end ML pipeline achieving 87% accuracy with ensemble models, deployed via FastAPI, integrating SHAP for explainability to empower HR decision-making.
+        </p>
+      </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>AI Projects Intern — Visionyle Solutions</h3>
-    <p>Automated HR data processing and deployed ML models to improve employee performance analysis.</p>
+      <div class="project">
+        <h3>Student Support Chatbot</h3>
+        <p>
+          Created a context-aware chatbot that reduced student query response time by 70%, built on FastAPI with a scalable design for future NLU enhancements.
+        </p>
+      </div>
 
-    <h3>Operations Data Intern — Amazon</h3>
-    <p>Streamlined payroll and attendance tracking with Python automation, improving operational efficiency by 20%.</p>
-  </section>
+      <div class="project">
+        <h3>Telugu Manuscript OCR & Reader</h3>
+        <p>
+          Built a Gradio app that extracts handwritten Telugu text using pytesseract and reads it aloud with Google TTS, combining AI and language technology.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python, FastAPI, Scikit-learn, TensorFlow, PyTorch</li>
+        <li>Machine Learning, Deep Learning, NLP, Predictive Modeling</li>
+        <li>Data Preprocessing, Hyperparameter Tuning, MLOps</li>
+        <li>AWS, Docker, Kubernetes, Git</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section fade-in">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>AI Projects Intern — Visionyle Solutions</h3>
+        <p>Automated HR data processing and deployed ML models to improve employee performance analysis.</p>
+      </div>
+
+      <div class="experience">
+        <h3>Operations Data Intern — Amazon</h3>
+        <p>Streamlined payroll and attendance tracking with Python automation, increasing operational efficiency by 20%.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations, internships, or just to say hello!</p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Purnima Prabha</p>
   </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    // Dark mode toggle
+    const toggleBtn = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Load saved mode
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark');
+      toggleBtn.textContent = '☀️';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+
+      if (body.classList.contains('dark')) {
+        toggleBtn.textContent = '☀️';
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        toggleBtn.textContent = '🌙';
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  </script>
 </body>
 </html>
