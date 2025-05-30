@@ -1,4 +1,4 @@
-/* Reset & base */
+/* Reset & Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,31 +22,34 @@ body {
 
 /* Header */
 header {
-  background-color: #1e3a8a; /* deep blue */
-  color: #e0e7ff; /* light blue */
-  padding: 2rem 0;
   text-align: center;
-}
-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 0.3rem;
-}
-header .subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
+  padding: 2rem 1rem 1rem;
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+  border-bottom: 3px solid #1e40af;
 }
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 1.5rem auto;
-  box-shadow: 0 0 8px rgba(30, 58, 138, 0.4);
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.4);
   border: 2px solid #1e3a8a;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.tagline {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
 /* Main Sections */
@@ -55,43 +58,15 @@ main {
   padding: 2rem 0;
 }
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
-
-/* Collapsible button style */
-.collapsible {
-  background-color: #1e40af; /* blue-700 */
-  color: white;
-  cursor: pointer;
-  padding: 0.8rem 1.2rem;
-  width: 100%;
-  border: none;
-  text-align: left;
-  font-size: 1.25rem;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  user-select: none;
-  box-shadow: 0 2px 6px rgba(30, 58, 175, 0.3);
-}
-.collapsible:hover,
-.collapsible.active {
-  background-color: #3b82f6; /* blue-500 */
-}
-
-/* Collapsible content */
-.content {
-  background-color: #fff;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.35s ease-out;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-  padding: 0 1.5rem;
-  margin-top: 0.3rem;
-}
-.content p, .content ul, .content div.card {
-  padding: 1rem 0;
+section h2 {
+  font-size: 1.8rem;
+  color: #1e40af;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
 }
 
 /* Cards */
@@ -100,7 +75,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
   padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   transition: box-shadow 0.3s ease;
 }
 .card:hover {
@@ -111,36 +86,40 @@ section {
   color: #1e3a8a;
   margin-bottom: 0.6rem;
 }
-.card p {
+.card p, .card ul {
   font-size: 1rem;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+.card ul {
+  padding-left: 1.2rem;
+}
+.card li {
+  margin-bottom: 0.6rem;
 }
 
-/* Lists */
-.content ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-  list-style-type: disc;
-  color: #444;
-  font-size: 1rem;
-  line-height: 1.5;
+/* Collapsibles */
+.collapsible {
+  background-color: #1e3a8a;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
-.content ul li {
-  margin-bottom: 0.5rem;
+.collapsible:hover {
+  background-color: #3b82f6;
 }
-
-/* Projects section (always open) */
-section#projects {
-  margin-bottom: 3rem;
-}
-section#projects h2 {
-  font-size: 2rem;
-  color: #1e40af; /* blue-700 */
-  border-bottom: 3px solid #3b82f6; /* blue-500 */
-  padding-bottom: 0.3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
 }
 
 /* Footer */
@@ -156,18 +135,15 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 2rem;
-  }
-  header .subtitle {
-    font-size: 1rem;
-  }
-  .collapsible {
-    font-size: 1.1rem;
-  }
-  section#projects h2 {
     font-size: 1.5rem;
+  }
+  .tagline {
+    font-size: 0.9rem;
   }
   .card {
     padding: 1rem;
+  }
+  section h2 {
+    font-size: 1.4rem;
   }
 }
