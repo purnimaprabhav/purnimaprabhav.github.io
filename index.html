@@ -2,88 +2,208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purnima Prabha | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"  crossorigin="anonymous"></script>
 </head>
 <body>
+
   <header>
-    <img src="Purnima.jpg" alt="Your Photo" class="profile-photo" />
-    <h1>Your Name</h1>
+    <img src="Purnima.jpg" alt="Purnima Prabha Photo" class="profile-photo" />
+    <h1>Purnima Prabha</h1>
+    <p class="tagline">AI & Data Science Enthusiast | Researcher | Developer</p>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#projects" class="active">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main class="container">
-    <section>
+
+    <!-- Collapsible Education -->
+    <section id="education">
+      <button class="collapsible">Education <span class="arrow">&#9656;</span></button>
+      <div class="content">
+        <div class="card">
+          <h3>EPITA Graduate School of Computer Science, Paris, France</h3>
+          <p>Master’s in Artificial Intelligence, 2024 - Present</p>
+        </div>
+        <div class="card">
+          <h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
+          <p>Bachelor's in Electronics and Communication Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
       <h2>Projects</h2>
-      <div class="card">
-        <h3>Emotion-Aware Learning Recommender</h3>
-        <p>AI-powered system to reduce information overload for learners using RAG/CAG logic and emotion detection.</p>
-      </div>
-      <div class="card">
-        <h3>Traffic Regression Analysis</h3>
-        <p>Built a Streamlit regression app based on traffic sensor data to simulate vehicle count prediction and improve route planning efficiency.</p>
-      </div>
-    </section>
-
-    <section>
-      <button class="collapsible">
-        <span class="arrow">▶</span> Experience
-      </button>
-      <div class="content">
+      <div class="cards-grid">
         <div class="card">
-          <ul>
-            <li><strong>Company A</strong> – Data Intern, 2023<br>Analyzed sensor data and created dashboards in Grafana to monitor real-time traffic.</li>
-            <li><strong>Company B</strong> – Research Assistant, 2022<br>Assisted in implementing a decision tree model for a classification task.</li>
-          </ul>
+          <h3>Reducing Information Overload in Learners Using AI</h3>
+          <p>
+            Developing an AI-powered personalized learning system incorporating emotion-aware feedback to dynamically filter and re-rank educational content, improving learner engagement and outcomes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Employee Performance Predictor</h3>
+          <p>
+            Designed an end-to-end ML pipeline using Scikit-learn and FastAPI, achieving 87% accuracy. Integrated SHAP for model explainability, empowering HR teams to make transparent and data-backed decisions.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Student Support Chatbot</h3>
+          <p>
+            Built a FastAPI-based NLP assistant that reduced student response time by 70%. The bot handled routine academic queries and was engineered for modular upgrades.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Telugu Manuscript OCR & Reader</h3>
+          <p>
+            Developed an AI tool using Gradio and pytesseract to extract text from ancient Telugu manuscripts and narrate it using Google TTS. Aimed to preserve linguistic heritage and improve accessibility.
+          </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <button class="collapsible">
-        <span class="arrow">▶</span> Skills
-      </button>
-      <div class="content">
+    <!-- Professional Experience (Always Visible) -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="cards-grid">
         <div class="card">
-          <ul>
-            <li>Languages: Python, SQL, JavaScript</li>
-            <li>Frameworks: Scikit-learn, TensorFlow, Streamlit</li>
-            <li>Tools: Git, Docker, Grafana, Git LFS</li>
-          </ul>
+          <h3>Visionyle Solutions — AI Projects Intern</h3>
+          <p>
+            Automated recruitment pipelines, improved HR analytics using deployed ML models, and championed a shift to data-driven strategy.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Amazon — Operations Data Intern</h3>
+          <p>
+            Boosted team productivity by 20% through automation of payroll and attendance reporting systems using Python and analytics dashboards.
+          </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <button class="collapsible">
-        <span class="arrow">▶</span> Education
-      </button>
+    <!-- Collapsible Technical Skills -->
+    <section id="skills">
+      <button class="collapsible">Technical Skills <span class="arrow">&#9656;</span></button>
       <div class="content">
+        <ul>
+          <li>Languages & Frameworks: Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
+          <li>Concepts: Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
+          <li>Tools: Docker, Git, AWS, Kubernetes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Collapsible About Me -->
+    <section id="about">
+      <button class="collapsible">More About Me <span class="arrow">&#9656;</span></button>
+      <div class="content">
+        <p>
+          I’m also a passionate singer and creative writer. I believe good AI blends empathy with efficiency, and I bring that mindset to both code and life. I love exploring how tech and humanities intersect.
+        </p>
+      </div>
+    </section>
+
+    <!-- Past Projects -->
+    <section>
+      <h2>Past Projects</h2>
+      <div class="cards-grid">
         <div class="card">
-          <p><strong>MSc Artificial Intelligence</strong>, Your University<br>Expected Graduation: 2025</p>
+          <h3>Telugu AI Language Applications Review</h3>
+          <p>
+            Conducted an in-depth literature review on AI advancements in the Telugu language domain, covering speech recognition, large language models, cultural preservation, and educational tools.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Geo Literacy Online Map Game</h3>
+          <p>
+            Developed a concept and business model for a gamified online map learning platform to combat geographic illiteracy in young adults.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Orange Picking Robot Prototype</h3>
+          <p>
+            Designed a robotic prototype to automate orange harvesting using image processing for fruit detection and robotic manipulation.
+          </p>
+        </div>
+        <div class="card">
+          <h3>IoT-Based Soil Moisture Sensor for Agriculture</h3>
+          <p>
+            Developed a low-cost IoT-enabled soil moisture monitoring system to optimize irrigation and crop growth with sensor data communicated via Wi-Fi to a smartphone app.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Automated Size Grading Conveyor System Proposal</h3>
+          <p>
+            Collaborated on a proposal for an automated size grading conveyor to classify harvested produce by size using mechanical conveyors and sensor feedback.
+          </p>
+        </div>
+        <div class="card">
+          <h3>GPS Position Approximation Using Iterative Techniques</h3>
+          <p>
+            Analyzed iterative numerical methods like Newton-Raphson and Gauss-Newton to improve GPS receiver position accuracy by modeling satellite data processing and algorithm convergence.
+          </p>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:purnimaprabha@example.com">purnimaprabha@example.com</a></p>
+          <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourusername"  target="_blank">LinkedIn Profile</a></p>
+          <p>
+            <a href="resume.pdf" download class="btn-resume">
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Purnima Prabha | All rights reserved</p>
   </footer>
 
   <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-    collapsibles.forEach((btn) => {
-      btn.addEventListener("click", function () {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        const arrow = this.querySelector('.arrow');
+    // Collapsible functionality
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        const content = button.nextElementSibling;
+        const arrow = button.querySelector('.arrow');
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
-          arrow.textContent = '▶';
+          arrow.style.transform = 'rotate(0deg)';
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
-          arrow.textContent = '▼';
+          arrow.style.transform = 'rotate(90deg)';
         }
+      });
+    });
+
+    // Add active class to current nav link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
       });
     });
   </script>
