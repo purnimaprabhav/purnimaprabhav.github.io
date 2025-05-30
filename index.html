@@ -3,34 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Purnima R | AI Portfolio</title>
+  <title>Your Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <h1 class="logo">Purnima R</h1>
-    <ul class="nav-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="hero">
-    <img src="Purnima.jpg" alt="Portrait of Purnima" class="profile-photo" />
-    <h2>AI Explorer | Turning Data into Insights</h2>
-    <p class="tagline">Passionate about Human-Centered AI and Ethical Innovation</p>
+  <header>
+    <img src="WhatsApp Image 2025-04-09 at 12.41.13 PM.jpeg" alt="Your Photo" class="profile-photo" />
+    <h1>Your Name</h1>
   </header>
 
   <main class="container">
-
-    <!-- Projects Section -->
-    <section id="projects">
+    <section>
       <h2>Projects</h2>
       <div class="card">
         <h3>Emotion-Aware Learning Recommender</h3>
@@ -38,107 +21,71 @@
       </div>
       <div class="card">
         <h3>Traffic Regression Analysis</h3>
-        <p>Streamlit regression app simulating vehicle count prediction from sensor data to support route planning.</p>
-      </div>
-      <div class="card">
-        <h3>Employee Performance Predictor</h3>
-        <p>Built ML pipeline with Scikit-learn and FastAPI (87% accuracy). Integrated explainability features to support HR decisions.</p>
-      </div>
-      <div class="card">
-        <h3>Student Support Chatbot</h3>
-        <p>NLP assistant built with FastAPI. Reduced student response time by 70% and handled academic FAQs modularly.</p>
-      </div>
-      <div class="card">
-        <h3>Telugu Manuscript OCR & Reader</h3>
-        <p>Extracted text from historical manuscripts using pytesseract and narrated it with Google TTS via a Gradio interface.</p>
+        <p>Built a Streamlit regression app based on traffic sensor data to simulate vehicle count prediction and improve route planning efficiency.</p>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>Professional Experience</h2>
-      <button class="collapsible">Click to View</button>
+    <section>
+      <button class="collapsible">
+        <span class="arrow">▶</span> Experience
+      </button>
       <div class="content">
         <div class="card">
-          <h3>Visionyle Solutions — AI Projects Intern</h3>
-          <p>Automated recruitment processes and built ML-based HR analytics, championing data-driven strategy.</p>
-        </div>
-        <div class="card">
-          <h3>Amazon — Operations Data Intern</h3>
-          <p>Improved team productivity by 20% by automating payroll/attendance reporting with Python and dashboards.</p>
-        </div>
-        <div class="card">
-          <h3>Company A — Data Intern (2023)</h3>
-          <p>Analyzed traffic sensor data and created real-time monitoring dashboards using Grafana.</p>
-        </div>
-        <div class="card">
-          <h3>Company B — Research Assistant (2022)</h3>
-          <p>Assisted in implementing a decision tree classifier and documented model performance metrics.</p>
+          <ul>
+            <li><strong>Company A</strong> – Data Intern, 2023<br>Analyzed sensor data and created dashboards in Grafana to monitor real-time traffic.</li>
+            <li><strong>Company B</strong> – Research Assistant, 2022<br>Assisted in implementing a decision tree model for a classification task.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <button class="collapsible">Click to View</button>
+    <section>
+      <button class="collapsible">
+        <span class="arrow">▶</span> Skills
+      </button>
       <div class="content">
-        <ul>
-          <li><strong>Languages:</strong> Python, SQL, JavaScript</li>
-          <li><strong>Frameworks:</strong> FastAPI, Scikit-learn, TensorFlow, PyTorch, Streamlit</li>
-          <li><strong>Concepts:</strong> Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
-          <li><strong>Tools:</strong> Docker, Git, AWS, Kubernetes, Grafana, Git LFS</li>
-        </ul>
+        <div class="card">
+          <ul>
+            <li>Languages: Python, SQL, JavaScript</li>
+            <li>Frameworks: Scikit-learn, TensorFlow, Streamlit</li>
+            <li>Tools: Git, Docker, Grafana, Git LFS</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="card">
-        <p><strong>MSc Artificial Intelligence</strong>, Your University<br/>Expected Graduation: 2025</p>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2>More About Me</h2>
-      <button class="collapsible">Click to View</button>
+    <section>
+      <button class="collapsible">
+        <span class="arrow">▶</span> Education
+      </button>
       <div class="content">
-        <p>
-          I’m a curious AI researcher and a creative soul—also a singer and writer. I believe the best technology is human-centered,
-          empathetic, and inclusive. I'm driven to explore how AI can enhance lives while remaining ethical and transparent.
-        </p>
+        <div class="card">
+          <p><strong>MSc Artificial Intelligence</strong>, Your University<br>Expected Graduation: 2025</p>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Purnima R. All rights reserved.</p>
-    <p>
-      📧 <a href="mailto:your.email@example.com">your.email@example.com</a> |
-      🔗 <a href="https://linkedin.com/in/your-link">LinkedIn</a> |
-      💻 <a href="https://github.com/your-username">GitHub</a>
-    </p>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
-  <!-- Collapsible JS -->
   <script>
     const collapsibles = document.querySelectorAll(".collapsible");
     collapsibles.forEach((btn) => {
       btn.addEventListener("click", function () {
         this.classList.toggle("active");
         const content = this.nextElementSibling;
+        const arrow = this.querySelector('.arrow');
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
+          arrow.textContent = '▶';
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
+          arrow.textContent = '▼';
         }
       });
     });
   </script>
-
 </body>
 </html>
