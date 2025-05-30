@@ -2,196 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Purnima Prabha | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Purnima R | AI Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Purnima Prabha</h1>
-    <p class="subtitle">AI & Data Science Enthusiast | Researcher | Developer</p>
-    <img src="purnima_photo.jpeg" alt="Purnima Prabha Photo" class="profile-photo" />
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h1 class="logo">Purnima R</h1>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+    <img src="Purnima.jpg" alt="Portrait of Purnima" class="profile-photo" />
+    <h2>AI Explorer | Turning Data into Insights</h2>
+    <p class="tagline">Passionate about Human-Centered AI and Ethical Innovation</p>
   </header>
 
   <main class="container">
-    <!-- Collapsible About Me -->
-    <section>
-      <button class="collapsible">About Me</button>
-      <div class="content">
-        <p>
-          I am passionate about using AI and data-driven approaches to solve real-world problems.
-          With a background in research and software development, I thrive at the intersection of technology and innovation.
-        </p>
-      </div>
-    </section>
 
-    <!-- Collapsible Education -->
-    <section>
-      <button class="collapsible">Education</button>
-      <div class="content">
-        <div class="card">
-          <h3>EPITA Graduate School of Computer Science, Paris, France</h3>
-          <p>Master’s in Artificial Intelligence, 2024 - Present</p>
-        </div>
-        <div class="card">
-          <h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
-          <p>Bachelor's in Electronics and Communication Engineering, 2013 - 2017</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects (always visible) -->
+    <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="card">
-        <h3>Reducing Information Overload in Learners Using AI</h3>
-        <p>
-          Developing an AI-powered personalized learning system incorporating emotion-aware feedback
-          to dynamically filter and re-rank educational content, improving learner engagement and outcomes.
-        </p>
+        <h3>Emotion-Aware Learning Recommender</h3>
+        <p>AI-powered system to reduce information overload for learners using RAG/CAG logic and emotion detection.</p>
       </div>
       <div class="card">
-        <h3>RAG/CAG Hybrid Model for Personalized Learning</h3>
-        <p>
-          Built a decision-tree based model to switch between Retrieval-Augmented Generation and Cache-Augmented Generation
-          methods for adaptive content delivery based on learner emotional state and query complexity.
-        </p>
+        <h3>Traffic Regression Analysis</h3>
+        <p>Streamlit regression app simulating vehicle count prediction from sensor data to support route planning.</p>
       </div>
       <div class="card">
-        <h3>🧠 Employee Performance Predictor</h3>
-        <p>
-          Designed an end-to-end ML pipeline using Scikit-learn and FastAPI, achieving 87% accuracy.
-          Integrated SHAP for model explainability, empowering HR teams to make transparent and data-backed decisions.
-        </p>
+        <h3>Employee Performance Predictor</h3>
+        <p>Built ML pipeline with Scikit-learn and FastAPI (87% accuracy). Integrated explainability features to support HR decisions.</p>
       </div>
       <div class="card">
-        <h3>🤖 Student Support Chatbot</h3>
-        <p>
-          Built a FastAPI-based NLP assistant that reduced student response time by 70%.
-          The bot handled routine academic queries and was engineered for modular upgrades.
-        </p>
+        <h3>Student Support Chatbot</h3>
+        <p>NLP assistant built with FastAPI. Reduced student response time by 70% and handled academic FAQs modularly.</p>
       </div>
       <div class="card">
-        <h3>📜 Telugu Manuscript OCR & Reader</h3>
-        <p>
-          Developed an AI tool using Gradio and pytesseract to extract text from ancient Telugu manuscripts
-          and narrate it using Google TTS. Aimed to preserve linguistic heritage and improve accessibility.
-        </p>
+        <h3>Telugu Manuscript OCR & Reader</h3>
+        <p>Extracted text from historical manuscripts using pytesseract and narrated it with Google TTS via a Gradio interface.</p>
       </div>
     </section>
 
-    <!-- Collapsible Professional Experience -->
-    <section>
-      <button class="collapsible">Professional Experience</button>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <button class="collapsible">Click to View</button>
       <div class="content">
         <div class="card">
           <h3>Visionyle Solutions — AI Projects Intern</h3>
-          <p>
-            Automated recruitment pipelines, improved HR analytics using deployed ML models,
-            and championed a shift to data-driven strategy.
-          </p>
+          <p>Automated recruitment processes and built ML-based HR analytics, championing data-driven strategy.</p>
         </div>
         <div class="card">
           <h3>Amazon — Operations Data Intern</h3>
-          <p>
-            Boosted team productivity by 20% through automation of payroll and attendance reporting systems
-            using Python and analytics dashboards.
-          </p>
+          <p>Improved team productivity by 20% by automating payroll/attendance reporting with Python and dashboards.</p>
+        </div>
+        <div class="card">
+          <h3>Company A — Data Intern (2023)</h3>
+          <p>Analyzed traffic sensor data and created real-time monitoring dashboards using Grafana.</p>
+        </div>
+        <div class="card">
+          <h3>Company B — Research Assistant (2022)</h3>
+          <p>Assisted in implementing a decision tree classifier and documented model performance metrics.</p>
         </div>
       </div>
     </section>
 
-    <!-- Collapsible Technical Skills -->
-    <section>
-      <button class="collapsible">Technical Skills</button>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <button class="collapsible">Click to View</button>
       <div class="content">
         <ul>
-          <li>Languages & Frameworks: Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
-          <li>Concepts: Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
-          <li>Tools: Docker, Git, AWS, Kubernetes</li>
+          <li><strong>Languages:</strong> Python, SQL, JavaScript</li>
+          <li><strong>Frameworks:</strong> FastAPI, Scikit-learn, TensorFlow, PyTorch, Streamlit</li>
+          <li><strong>Concepts:</strong> Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
+          <li><strong>Tools:</strong> Docker, Git, AWS, Kubernetes, Grafana, Git LFS</li>
         </ul>
       </div>
     </section>
 
-    <!-- Collapsible More About Me -->
-    <section>
-      <button class="collapsible">More About Me</button>
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>MSc Artificial Intelligence</strong>, Your University<br/>Expected Graduation: 2025</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>More About Me</h2>
+      <button class="collapsible">Click to View</button>
       <div class="content">
         <p>
-          I’m also a passionate singer and creative writer. I believe good AI blends empathy with efficiency,
-          and I bring that mindset to both code and life. I love exploring how tech and humanities intersect.
+          I’m a curious AI researcher and a creative soul—also a singer and writer. I believe the best technology is human-centered,
+          empathetic, and inclusive. I'm driven to explore how AI can enhance lives while remaining ethical and transparent.
         </p>
       </div>
     </section>
 
-    <!-- Collapsible Past Projects -->
-    <section>
-      <button class="collapsible">Past Projects</button>
-      <div class="content">
-        <div class="card">
-          <h3>Telugu AI Language Applications Review</h3>
-          <p>
-            Conducted an in-depth literature review on AI advancements in the Telugu language domain, covering speech recognition,
-            large language models, cultural preservation, and educational tools. Highlighted projects include NVIDIA’s Telugu ASR,
-            Telugu LLM Labs, and AI Chandamama Kathalu.
-          </p>
-          <p><strong>Skills:</strong> NLP research, AI literature review, language tech</p>
-        </div>
-        <div class="card">
-          <h3>Geo Literacy Online Map Game</h3>
-          <p>
-            Developed a concept and business model for a gamified online map learning platform to combat geographic illiteracy
-            in young adults. The game combines gaming mechanics with educational content and partnerships with schools.
-          </p>
-          <p><strong>Skills:</strong> Product concept design, market validation, educational technology</p>
-        </div>
-        <div class="card">
-          <h3>Orange Picking Robot Prototype</h3>
-          <p>
-            Designed a robotic prototype to automate orange harvesting using image processing for fruit detection and robotic manipulation,
-            including obstacle avoidance and object differentiation.
-          </p>
-          <p><strong>Skills:</strong> Robotics, image processing, automation, prototype development</p>
-        </div>
-        <div class="card">
-          <h3>IoT-Based Soil Moisture Sensor for Agriculture</h3>
-          <p>
-            Developed a low-cost IoT-enabled soil moisture monitoring system to optimize irrigation and crop growth with sensor data
-            communicated via Wi-Fi to a smartphone app. Designed for energy efficiency and weather resistance.
-          </p>
-          <p><strong>Skills:</strong> IoT, embedded systems, sensor integration, mobile app interfacing</p>
-        </div>
-        <div class="card">
-          <h3>Automated Size Grading Conveyor System Proposal</h3>
-          <p>
-            Collaborated on a proposal for an automated size grading conveyor to classify harvested produce by size using mechanical conveyors
-            and sensor feedback to improve processing efficiency.
-          </p>
-          <p><strong>Skills:</strong> Mechanical design coordination, automation planning</p>
-        </div>
-        <div class="card">
-          <h3>GPS Position Approximation Using Iterative Techniques</h3>
-          <p>
-            Analyzed iterative numerical methods like Newton-Raphson and Gauss-Newton to improve GPS receiver position accuracy
-            by modeling satellite data processing and algorithm convergence in noisy environments.
-          </p>
-          <p><strong>Skills:</strong> Numerical methods, GPS signal processing, algorithm development</p>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Purnima Prabha | All rights reserved</p>
+    <p>© 2025 Purnima R. All rights reserved.</p>
+    <p>
+      📧 <a href="mailto:your.email@example.com">your.email@example.com</a> |
+      🔗 <a href="https://linkedin.com/in/your-link">LinkedIn</a> |
+      💻 <a href="https://github.com/your-username">GitHub</a>
+    </p>
   </footer>
 
+  <!-- Collapsible JS -->
   <script>
-    // Collapsible functionality for sections
-    const collapsibles = document.querySelectorAll('.collapsible');
-    collapsibles.forEach(button => {
-      button.addEventListener('click', () => {
-        button.classList.toggle('active');
-        const content = button.nextElementSibling;
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
         } else {
@@ -200,5 +139,6 @@
       });
     });
   </script>
+
 </body>
 </html>
