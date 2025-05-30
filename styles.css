@@ -1,4 +1,4 @@
-/* Reset & base */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,11 +6,10 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
-  color: #034d4d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #1a1a1a;
   line-height: 1.6;
-  font-size: 16px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,110 +25,143 @@ body {
 
 /* Header */
 header {
-  background-color: #00bfa5;
-  color: #fff;
+  background-color: #0a1f44; /* Dark Navy */
+  color: white;
   padding: 2rem 0;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header-content {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .profile-pic {
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #004d4d;
+  background-color: #2a3f6b; /* placeholder bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 0.9rem;
   flex-shrink: 0;
+  border: 2px solid #1a2a4a;
 }
 
-h1 {
+.intro-text h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 700;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  color: #ffffff;
+  margin-bottom: 0.2rem;
 }
 
 .subtitle {
-  font-weight: 400;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: 1.2rem;
+  font-weight: 500;
   opacity: 0.85;
-  margin-top: 0.2rem;
-  max-width: 100%;
-  text-align: center;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #7789a1;
+  font-weight: 400;
 }
 
 /* Section Titles */
 h2 {
-  font-weight: 600;
-  color: #007f7f;
-  border-bottom: 2px solid #00bfa5;
+  color: #0a1f44;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  border-bottom: 2px solid #7789a1;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
 }
 
-/* Lists */
-.skills-list {
-  list-style: none;
-  padding-left: 0;
+/* Cards */
+.card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(10, 31, 68, 0.1);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  flex-wrap: wrap;
 }
 
-.skills-list li {
-  margin-bottom: 0.6rem;
-  font-weight: 500;
-  color: #034d4d;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+.card:hover {
+  box-shadow: 0 6px 16px rgba(10, 31, 68, 0.2);
 }
 
-/* Projects and Experience */
-.project, section#experience article {
-  margin-bottom: 1.25rem;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+.card-content {
+  flex: 1;
 }
 
-.project h3, section#experience h3 {
+.logo {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #7789a1;
+  border-radius: 8px;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
   font-weight: 600;
-  color: #006666;
-  margin-bottom: 0.4rem;
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Skills List */
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem 2rem;
+  font-weight: 500;
+  color: #374151;
+  font-size: 1rem;
 }
 
 /* Links */
 a {
-  color: #007f7f;
+  color: #0a1f44;
   text-decoration: none;
+  font-weight: 600;
 }
 
-a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
+  color: #1c3d7a;
 }
 
 /* Contact */
 #contact p {
   margin-bottom: 0.5rem;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: 1rem;
 }
 
 /* Footer */
 footer {
-  background-color: #004d4d;
-  color: #ccc;
+  background-color: #0a1f44;
+  color: #9ca3af;
   text-align: center;
   padding: 1rem 0;
   margin-top: auto;
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 600px) {
   .header-content {
     flex-direction: column;
@@ -137,22 +169,17 @@ footer {
   }
 
   .profile-pic {
-    margin-bottom: 1rem;
     width: 80px;
     height: 80px;
+    margin-bottom: 1rem;
   }
 
-  h1 {
-    font-size: 1.8rem;
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .subtitle {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 80%;
+  .logo {
+    margin-bottom: 0.75rem;
   }
 }
