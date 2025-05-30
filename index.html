@@ -10,30 +10,37 @@
   <header>
     <h1>Purnima Prabha</h1>
     <p class="subtitle">AI & Data Science Enthusiast | Researcher | Developer</p>
-    <div class="profile-photo-placeholder">Photo</div>
+    <img src="purnima_photo.jpeg" alt="Purnima Prabha Photo" class="profile-photo" />
   </header>
 
   <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am passionate about using AI and data-driven approaches to solve real-world problems.
-        With a background in research and software development, I thrive at the intersection of technology and innovation.
-      </p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="card">
-        <h3>EPITA Graduate School of Computer Science, Paris, France</h3>
-        <p>Master’s in Artificial Intelligence, 2024 - Present</p>
-      </div>
-      <div class="card">
-        <h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
-        <p>Bachelor's in Electronics and Communication Engineering, 2013 - 2017</p>
+    <!-- Collapsible About Me -->
+    <section>
+      <button class="collapsible">About Me</button>
+      <div class="content">
+        <p>
+          I am passionate about using AI and data-driven approaches to solve real-world problems.
+          With a background in research and software development, I thrive at the intersection of technology and innovation.
+        </p>
       </div>
     </section>
 
+    <!-- Collapsible Education -->
+    <section>
+      <button class="collapsible">Education</button>
+      <div class="content">
+        <div class="card">
+          <h3>EPITA Graduate School of Computer Science, Paris, France</h3>
+          <p>Master’s in Artificial Intelligence, 2024 - Present</p>
+        </div>
+        <div class="card">
+          <h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
+          <p>Bachelor's in Electronics and Communication Engineering, 2013 - 2017</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (always visible) -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="card">
@@ -73,47 +80,54 @@
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Professional Experience</h2>
-      <div class="card">
-        <h3>Visionyle Solutions — AI Projects Intern</h3>
+    <!-- Collapsible Professional Experience -->
+    <section>
+      <button class="collapsible">Professional Experience</button>
+      <div class="content">
+        <div class="card">
+          <h3>Visionyle Solutions — AI Projects Intern</h3>
+          <p>
+            Automated recruitment pipelines, improved HR analytics using deployed ML models,
+            and championed a shift to data-driven strategy.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Amazon — Operations Data Intern</h3>
+          <p>
+            Boosted team productivity by 20% through automation of payroll and attendance reporting systems
+            using Python and analytics dashboards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collapsible Technical Skills -->
+    <section>
+      <button class="collapsible">Technical Skills</button>
+      <div class="content">
+        <ul>
+          <li>Languages & Frameworks: Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
+          <li>Concepts: Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
+          <li>Tools: Docker, Git, AWS, Kubernetes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Collapsible More About Me -->
+    <section>
+      <button class="collapsible">More About Me</button>
+      <div class="content">
         <p>
-          Automated recruitment pipelines, improved HR analytics using deployed ML models,
-          and championed a shift to data-driven strategy.
+          I’m also a passionate singer and creative writer. I believe good AI blends empathy with efficiency,
+          and I bring that mindset to both code and life. I love exploring how tech and humanities intersect.
         </p>
       </div>
-      <div class="card">
-        <h3>Amazon — Operations Data Intern</h3>
-        <p>
-          Boosted team productivity by 20% through automation of payroll and attendance reporting systems
-          using Python and analytics dashboards.
-        </p>
-      </div>
     </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Languages & Frameworks: Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
-        <li>Concepts: Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
-        <li>Tools: Docker, Git, AWS, Kubernetes</li>
-      </ul>
-    </section>
-
-    <section id="extras">
-      <h2>More About Me</h2>
-      <p>
-        I’m also a passionate singer and creative writer. I believe good AI blends empathy with efficiency,
-        and I bring that mindset to both code and life. I love exploring how tech and humanities intersect.
-      </p>
-    </section>
-
-    <section id="past-projects">
-      <h2>Past Projects</h2>
-
-      <details>
-        <summary>Show / Hide Past Projects ▼</summary>
-
+    <!-- Collapsible Past Projects -->
+    <section>
+      <button class="collapsible">Past Projects</button>
+      <div class="content">
         <div class="card">
           <h3>Telugu AI Language Applications Review</h3>
           <p>
@@ -123,7 +137,6 @@
           </p>
           <p><strong>Skills:</strong> NLP research, AI literature review, language tech</p>
         </div>
-
         <div class="card">
           <h3>Geo Literacy Online Map Game</h3>
           <p>
@@ -132,7 +145,6 @@
           </p>
           <p><strong>Skills:</strong> Product concept design, market validation, educational technology</p>
         </div>
-
         <div class="card">
           <h3>Orange Picking Robot Prototype</h3>
           <p>
@@ -141,7 +153,6 @@
           </p>
           <p><strong>Skills:</strong> Robotics, image processing, automation, prototype development</p>
         </div>
-
         <div class="card">
           <h3>IoT-Based Soil Moisture Sensor for Agriculture</h3>
           <p>
@@ -150,7 +161,6 @@
           </p>
           <p><strong>Skills:</strong> IoT, embedded systems, sensor integration, mobile app interfacing</p>
         </div>
-
         <div class="card">
           <h3>Automated Size Grading Conveyor System Proposal</h3>
           <p>
@@ -159,7 +169,6 @@
           </p>
           <p><strong>Skills:</strong> Mechanical design coordination, automation planning</p>
         </div>
-
         <div class="card">
           <h3>GPS Position Approximation Using Iterative Techniques</h3>
           <p>
@@ -168,13 +177,28 @@
           </p>
           <p><strong>Skills:</strong> Numerical methods, GPS signal processing, algorithm development</p>
         </div>
-
-      </details>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Purnima Prabha | All rights reserved</p>
   </footer>
+
+  <script>
+    // Collapsible functionality for sections
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        const content = button.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
