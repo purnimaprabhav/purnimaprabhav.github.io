@@ -1,18 +1,26 @@
-/* Reset & Base */
+/* ===============
+   Base Reset & Global Styles
+   =============== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f8ff;
-  color: #1e293b;
+  background-color: #f5f8fd;
+  color: #222;
   line-height: 1.6;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
+
 .container {
   width: 90%;
   max-width: 960px;
@@ -20,114 +28,239 @@ body {
   padding: 2rem 0;
 }
 
-/* Header */
+/* ===============
+   Header Section
+   =============== */
 header {
+  background-color: #dbeafe; /* Light blue */
+  color: #1e3a8a; /* Darker blue text */
+  padding: 2rem 0 3rem 0;
   text-align: center;
-  padding: 2rem 1rem 1rem;
-  background-color: #e0f7fa;
-  color: #0077b6;
-  border-bottom: 2px solid #90e0ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-.profile-photo {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 1rem auto;
-  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
-  border: 2px solid #48cae4;
-}
+
 header h1 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
+header .tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1e40af;
+  max-width: 600px;
 }
-section h2 {
-  font-size: 1.6rem;
-  color: #0077b6;
-  border-bottom: 2px solid #48cae4;
-  padding-bottom: 0.3rem;
+
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #93c5fd;
+  box-shadow: 0 2px 8px rgba(29, 78, 216, 0.3);
+}
+
+/* ===============
+   Navigation
+   =============== */
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: #1e40af;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom-color: #2563eb;
+}
+
+/* ===============
+   Headings
+   =============== */
+h2 {
+  font-size: 2rem;
+  color: #1e40af;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #93c5fd;
+  padding-bottom: 0.3rem;
 }
 
-/* Cards */
+/* ===============
+   Cards (Projects, Experience, etc.)
+   =============== */
 .card {
-  background-color: #ffffff;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.2rem;
-}
-.card h3 {
-  font-size: 1.3rem;
-  color: #0077b6;
-  margin-bottom: 0.6rem;
-}
-.card p, .card ul {
-  font-size: 1rem;
-  color: #333;
-}
-.card ul {
-  padding-left: 1.2rem;
-}
-.card li {
-  margin-bottom: 0.6rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.07);
+  transition: box-shadow 0.3s ease;
 }
 
-/* Collapsibles */
+.card:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.12);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 0.4rem;
+}
+
+.card p {
+  color: #374151;
+  font-size: 1rem;
+}
+
+/* ===============
+   Lists
+   =============== */
+ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  color: #374151;
+  margin-top: 0.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ===============
+   Collapsible Sections
+   =============== */
 .collapsible {
-  background-color: #caf0f8;
-  color: #005f73;
+  background-color: #bfdbfe;
+  color: #1e3a8a;
   cursor: pointer;
-  padding: 0.75rem 1.25rem;
+  padding: 0.8rem 1.2rem;
   width: 100%;
   border: none;
+  outline: none;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   border-radius: 6px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  user-select: none;
+  margin-bottom: 0.8rem;
   transition: background-color 0.3s ease;
 }
+
 .collapsible:hover {
-  background-color: #ade8f4;
+  background-color: #93c5fd;
+  color: #1e40af;
 }
-.collapsible .arrow {
+
+.collapsible.active {
+  background-color: #60a5fa;
+  color: white;
+}
+
+.arrow {
   font-size: 1.2rem;
+  transition: transform 0.3s ease;
 }
+
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.35s ease;
+  margin-bottom: 1.5rem;
 }
 
-/* Footer */
+/* ===============
+   Project Grid Layout
+   =============== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===============
+   Contact Section
+   =============== */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+  color: #2563eb;
+}
+
+.btn-resume {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-resume:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===============
+   Footer
+   =============== */
 footer {
-  background-color: #0077b6;
-  color: #e0f7fa;
+  background-color: #dbeafe;
+  color: #1e3a8a;
   text-align: center;
   padding: 1rem 0;
-  font-size: 0.9rem;
   margin-top: auto;
+  font-size: 0.9rem;
 }
 
-/* Responsive */
+/* ===============
+   Responsive Design
+   =============== */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .card {
-    padding: 1rem;
+
+  .card h3 {
+    font-size: 1.2rem;
   }
-  section h2 {
-    font-size: 1.4rem;
+
+  .collapsible {
+    font-size: 1rem;
+  }
+
+  nav {
+    justify-content: center;
   }
 }
