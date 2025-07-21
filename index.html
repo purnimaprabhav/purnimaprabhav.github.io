@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Purnima Prabha | Portfolio</title>
+  <title>Purnima Prabha | Data Scientist Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -13,150 +13,122 @@
   <header>
     <img src="Purnima.jpg" alt="Purnima" class="profile-photo" />
     <h1>Purnima Prabha</h1>
-    <p class="tagline">AI & Data Science Enthusiast | Researcher | Developer</p>
+    <p class="tagline">AI & Data Science Practitioner | NLP & MLOps | Bridging Tech and Empathy</p>
 
     <!-- Navigation -->
     <nav>
+      <a href="#about">About</a>
       <a href="#projects" class="active">Projects</a>
-      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main class="container">
 
-    <!-- Projects Section -->
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a data science master's student with hands-on experience in building scalable ML systems for education, HR, and cultural preservation. I bring a blend of research mindset and practical coding—from deploying ML APIs to experimenting with transformer models.
+        Passionate about combining AI with empathy, I explore how tech can meaningfully enhance human experiences.
+      </p>
+      <p>
+        <strong>Specialties:</strong> End-to-end ML pipelines, explainable AI, NLP, and cloud-native deployment.
+      </p>
+    </section>
+
+    <!-- Featured Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="cards-grid">
         <div class="card">
           <h3>Reducing Information Overload in Learners Using AI</h3>
           <p>
-            Developing an AI-powered personalized learning system incorporating emotion-aware feedback to dynamically filter and re-rank educational content, improving learner engagement and outcomes.
+            <strong>Problem:</strong> Learners face cognitive overload in online courses.<br>
+            <strong>Approach:</strong> Built an emotion-aware content filtering system using RAG, MLP, and feedback loops.<br>
+            <strong>Tools:</strong> FastAPI, HuggingFace, MLflow<br>
+            <strong>Outcome:</strong> Personalized learning paths boosted engagement (pilot study).<br>
+            <a href="#" target="_blank">🔗 GitHub</a> | <a href="#" target="_blank">📄 Report</a>
           </p>
         </div>
+
         <div class="card">
           <h3>Employee Performance Predictor</h3>
           <p>
-            Designed an end-to-end ML pipeline using Scikit-learn and FastAPI, achieving 87% accuracy. Integrated SHAP for model explainability, empowering HR teams to make transparent and data-backed decisions.
+            <strong>Problem:</strong> HR lacked transparency in performance reviews.<br>
+            <strong>Approach:</strong> Designed explainable ML model pipeline with SHAP integration.<br>
+            <strong>Tools:</strong> Scikit-learn, FastAPI, SHAP<br>
+            <strong>Outcome:</strong> Achieved 87% accuracy, helped HR make informed, bias-free decisions.<br>
+            <a href="#" target="_blank">🔗 GitHub</a>
           </p>
         </div>
+
         <div class="card">
           <h3>Student Support Chatbot</h3>
           <p>
-            Built a FastAPI-based NLP assistant that reduced student response time by 70%. The bot handled routine academic queries and was engineered for modular upgrades.
+            <strong>Problem:</strong> Repetitive student queries burdened academic staff.<br>
+            <strong>Approach:</strong> Created a modular NLP assistant with FastAPI.<br>
+            <strong>Tools:</strong> FastAPI, SpaCy, Transformers<br>
+            <strong>Outcome:</strong> Reduced student response time by 70%.<br>
+            <a href="#" target="_blank">🔗 GitHub</a>
           </p>
         </div>
+
         <div class="card">
           <h3>Telugu Manuscript OCR & Reader</h3>
           <p>
-            Developed an AI tool using Gradio and pytesseract to extract text from ancient Telugu manuscripts and narrate it using Google TTS. Aimed to preserve linguistic heritage and improve accessibility.
+            <strong>Problem:</strong> Ancient Telugu texts are inaccessible to most.<br>
+            <strong>Approach:</strong> Combined OCR with TTS to digitize and narrate manuscripts.<br>
+            <strong>Tools:</strong> Pytesseract, Gradio, Google TTS<br>
+            <strong>Outcome:</strong> Increased linguistic access for non-native readers.<br>
+            <a href="#" target="_blank">🔗 GitHub</a>
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Education (Collapsible) -->
-    <section id="education">
-      <button class="collapsible">Education <span class="arrow">&#9656;</span></button>
-      <div class="content">
-        <div class="card">
-          <h3>EPITA Graduate School of Computer Science, Paris, France</h3>
-          <p>Master’s in Artificial Intelligence, 2024 - Present</p>
-        </div>
-        <div class="card">
-          <h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
-          <p>Bachelor's in Electronics and Communication Engineering</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Professional Experience -->
+    <!-- Experience Section -->
     <section id="experience">
       <h2>Professional Experience</h2>
       <div class="cards-grid">
         <div class="card">
           <h3>Visionyle Solutions — AI Projects Intern</h3>
           <p>
-            Automated recruitment pipelines, improved HR analytics using deployed ML models, and championed a shift to data-driven strategy.
+            Automated recruitment workflows and built predictive models to optimize hiring processes. Led model deployment using Docker and FastAPI.
           </p>
         </div>
         <div class="card">
           <h3>Amazon — Operations Data Intern</h3>
           <p>
-            Boosted team productivity by 20% through automation of payroll and attendance reporting systems using Python and analytics dashboards.
+            Developed internal Python tools that automated payroll and attendance analytics. Resulted in a 20% productivity gain across teams.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Technical Skills (Collapsible) -->
+    <!-- Skills Section -->
     <section id="skills">
-      <button class="collapsible">Technical Skills <span class="arrow">&#9656;</span></button>
-      <div class="content">
-        <ul>
-          <li>Languages & Frameworks: Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
-          <li>Concepts: Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
-          <li>Tools: Docker, Git, AWS, Kubernetes</li>
-        </ul>
-      </div>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Python, FastAPI, Scikit-learn, TensorFlow, PyTorch, SQL</li>
+        <li><strong>Concepts:</strong> Machine Learning, Deep Learning, NLP, MLOps, Explainability</li>
+        <li><strong>Tools:</strong> Docker, Git, MLflow, AWS, Kubernetes, Gradio</li>
+      </ul>
     </section>
 
-    <!-- About Me (Collapsible) -->
-    <section id="about">
-      <button class="collapsible">About Me <span class="arrow">&#9656;</span></button>
-      <div class="content">
-        <p>
-          I’m also a passionate singer and creative writer. I believe good AI blends empathy with efficiency, and I bring that mindset to both code and life. I love exploring how tech and humanities intersect.
-        </p>
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>EPITA Graduate School of Computer Science, Paris</h3>
+        <p>Master’s in Artificial Intelligence, 2024 – Present</p>
       </div>
-    </section>
-
-    <!-- Past Projects (Collapsible) -->
-    <section id="past-projects">
-      <button class="collapsible">Past Projects <span class="arrow">&#9656;</span></button>
-      <div class="content">
-        <div class="cards-grid">
-          <div class="card">
-            <h3>Telugu AI Language Applications Review</h3>
-            <p>
-              Conducted an in-depth literature review on AI advancements in the Telugu language domain, covering speech recognition, large language models, cultural preservation, and educational tools.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Geo Literacy Online Map Game</h3>
-            <p>
-              Developed a concept and business model for a gamified online map learning platform to combat geographic illiteracy in young adults.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Orange Picking Robot Prototype</h3>
-            <p>
-              Designed a robotic prototype to automate orange harvesting using image processing for fruit detection and robotic manipulation.
-            </p>
-          </div>
-          <div class="card">
-            <h3>IoT-Based Soil Moisture Sensor for Agriculture</h3>
-            <p>
-              Developed a low-cost IoT-enabled soil moisture monitoring system to optimize irrigation and crop growth with sensor data communicated via Wi-Fi to a smartphone app.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Automated Size Grading Conveyor System Proposal</h3>
-            <p>
-              Collaborated on a proposal for an automated size grading conveyor to classify harvested produce by size using mechanical conveyors and sensor feedback.
-            </p>
-          </div>
-          <div class="card">
-            <h3>GPS Position Approximation Using Iterative Techniques</h3>
-            <p>
-              Analyzed iterative numerical methods like Newton-Raphson and Gauss-Newton to improve GPS receiver position accuracy by modeling satellite data processing and algorithm convergence.
-            </p>
-          </div>
-        </div>
+      <div class="card">
+        <h3>JNTU Kakinada, India</h3>
+        <p>Bachelor's in Electronics & Communication Engineering</p>
       </div>
     </section>
 
@@ -164,16 +136,14 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="contact-wrapper">
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> <a href="mailto:purnimapr8@gmail.com">purnimapr8@gmail.com</a></p>
-          <p><i class="fas fa-phone"></i>+33 605538449</p>
-          <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/purnima-prabha" target="_blank">LinkedIn Profile</a></p>
-          <p>
-            <a href="resume.pdf" download class="btn-resume">
-              <i class="fas fa-file-pdf"></i> Download Resume
-            </a>
-          </p>
-        </div>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:purnimapr8@gmail.com">purnimapr8@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> +33 605538449</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/purnima-prabha" target="https://www.linkedin.com/in/purnima-prabha/">LinkedIn</a></p>
+        <p>
+          <a href="resume.pdf" download class="btn-resume">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </p>
       </div>
     </section>
 
@@ -183,31 +153,5 @@
     <p>© 2025 Purnima Prabha | All rights reserved</p>
   </footer>
 
-  <script>
-    // Collapsible functionality
-    const collapsibles = document.querySelectorAll('.collapsible');
-    collapsibles.forEach(button => {
-      button.addEventListener('click', () => {
-        button.classList.toggle('active');
-        const content = button.nextElementSibling;
-        const arrow = button.querySelector('.arrow');
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-          arrow.style.transform = 'rotate(0deg)';
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-          arrow.style.transform = 'rotate(90deg)';
-        }
-      });
-    });
-
-    // Add active class to current nav link
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', function() {
-        document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  </script>
 </body>
 </html>
